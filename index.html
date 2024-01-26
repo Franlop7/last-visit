@@ -53,6 +53,10 @@
       ready = true;
     };
   });
+
+  window.addEventListener("unload", (event) => {
+    source.close();
+  });
 </script>
 
 <style>
